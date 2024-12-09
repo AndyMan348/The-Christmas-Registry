@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Christmas Registry</title>
+    <link rel="icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Welcome to the Christmas Registry!</h1>
+
+    <!-- Login Form Section -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Welcome Message after Successful Login -->
+        <div id="welcomeMessage" class="welcome-message" style="display:none;">
+            <h3>Welcome, <span id="userNameDisplay"></span>!</h3>
+            <p>You are now logged in. Proceed to your <a href="/registry">Christmas Registry</a>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
